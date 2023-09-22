@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="static/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos para la flor */
+        .flor {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            animation: girar 4s linear infinite;
+            z-index: 1; /* Asegura que la flor esté arriba de todo */
+        }
+
+        /* Animación de giro */
+        @keyframes girar {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Estilos para la sección de poema y mensaje */
+        .container {
+            text-align: center;
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        .poema {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .mensaje {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .corazon {
+            font-size: 36px;
+            color: red;
+            margin: 0 auto;
+        }
+
+        .boton {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* Estilos para la imagen */
+        .imagen-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .imagen {
+            width: 150px;
+            height: 150px;
+            border-radius: 70%;
+            object-fit: cover;
+            object-position: center top;
+            position: relative;
+        }
+    </style>
+    <title>Flores Amarillas</title>
+</head>
+
+<body>
+    <div class="back">
+        <div class="container">
+            <div class="imagen-container">
+                <img src="1.png" alt="1" class="imagen">
+            </div>
+            <p class="mensaje">Para ti, mi amor</p>
+            <div class="corazon">❤️</div>
+            <p class="poema">Rosas son rojas, violetas son azules,<br>
+                Tu amor es como un sol brillando en las mañanas y <br>
+                bajo el sol, flores amarillas en tu mirada,<br>
+                nuestro amor crece, como primavera anhelada.</p>
+            <button class="boton" onclick="window.location.href='floresAmarillas.html'">presiona para ver mi regalo <3</button>
+        </div>
+    </div>
+</body>
+
+</html>
